@@ -20,7 +20,7 @@ let getWord = () => {
         console.log(item)
         dict.textContent = item[0].meanings[0].definitions[0].definition
         trans.textContent =  item[0].phonetics[0].text
-        trans.textContent =  item[0].phonetics[1].text
+
         wordName.textContent = item[0].word
     });
 }
