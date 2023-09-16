@@ -74,39 +74,48 @@ input {outline: 0 !important;}
     padding:10px 0px;
 
 }
-
+.main__block{
+    text-transform:capitalize;
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:75px;
+    width:90%;
+    height:100%;
+    margin-top:50px;
+}
 .main__block_transcription-text, .main__block_transcription-word, .main__block_transcription-word--text{
-    position: absolute;
     letter-spacing: 0.75px;
     font-family: $one;
-    font-weight:600;
+    font-weight:700;
     transition: 0.7s;
     font-size: 17px;
     max-height:50px;
     overflow: auto;
     max-width:500px;
-    align-self:flex-start;
     color:white;
+
+
 }
 .main__block_transcription-text{
-    align-self:flex-end;
+
     color:#cecece;
     font-weight:300;
     font-size:20px;
 }
 .main__block_transcription-word--text{
-    align-self:center;
-    margin-bottom:150px;
+    text-decoration: underline;
+    position: absolute;
+    margin-top:37.5px;
     color:#cecece;
-    font-weight:400;
+    font-weight:300;
     letter-spacing: 1.5px;
 }
 .main__block_transcription-word{
-    position: absolute;
-    align-self:flex-start;
     font-size: 45px;
     transition: 1.2s;
-
+    margin-top:-50px;
+    position: absolute;
 }
 .main__block_transcription-word:hover{
     transform: 1.2s;
@@ -152,6 +161,8 @@ input {outline: 0 !important;}
 }
 
 svg{
+    align-self:flex-end;
+    position: absolute;
     fill:white;
     transition: 1s;
 }
